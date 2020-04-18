@@ -1,0 +1,29 @@
+.navbar {
+  background: black;
+  
+}
+
+.navbarTitle{
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-size: x-large;
+  color: white !important;
+}
+.navbarTitle:hover{
+  color:#fdd835 !important;
+}
+
+.navbarLink{
+  text-transform: uppercase;
+  font-size: larger;
+  color: white !important;
+}
+
+.navbarLink:hover{
+  color: #fdd835 !important;
+}
+
+.page{
+  margin-top: 5%;
+}

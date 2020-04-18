@@ -6,17 +6,21 @@ import Marketplace from "./pages/marketplace"
 import Account from "./pages/account"
 import Blog from "./pages/blog"
 import Calendar from "./pages/calendar"
+import NavBar from "./components/navbar"
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <div>
-          <Route exact path="/" component={NewsFeed} />
-          <Route exact path="/marketplace" component={Marketplace} />
-          <Route exact path="/account" component={Account} />
-          <Route exact path="/blog" component={Blog} />
-          <Route exact path="/calendar" component={Calendar} />
+          <NavBar/>
+          <div className="page">
+            <Route exact path="/" component={NewsFeed} />
+            <Route exact path="/marketplace" component={Marketplace} />
+            <Route exact path="/account" component={Account} />
+            <Route exact path="/blog" component={Blog} />
+            <Route exact path="/calendar" component={Calendar} />
+          </div>
         </div>
       </BrowserRouter>
     </div>
