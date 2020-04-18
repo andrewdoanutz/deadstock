@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Card,Col,Row} from "react-bootstrap"
+import {Card,Col,Row,Form,Button} from "react-bootstrap"
 import StarRatingComponent from "react-star-rating-component"
 
 
@@ -13,7 +13,7 @@ export default class Post extends Component {
             tags:this.props.tags,
             likes:this.props.likes,
             comments:this.props.comments,
-            liked:false
+            liked:false,
         }
     }
     onStarClickCustomIcon(nextValue, prevValue, name) {
@@ -23,10 +23,10 @@ export default class Post extends Component {
   render() {
     return (
       <div className="post">
-        <Card >
-            <Card.Title>{this.state.username}</Card.Title>
+        <Card style={{backgroundColor:"#212121"}}>
+            <Card.Title style={{margin:"2%",color:"white",fontWeight:"bold",letterSpacing:".05em"}}>{this.state.username}</Card.Title>
             <Card.Img src={this.state.pic} />
-            <Card.Body>
+            <Card.Body style={{margin:"1%",color:"white"}}>
                 <Card.Text>
                     <Col>
                     <Row>
@@ -51,12 +51,41 @@ export default class Post extends Component {
                             }} />
                             {this.state.likes+" likes"} 
                         </Row>
-                        {this.state.desc}
-                        {"View "+this.state.comments+" comments"}
+                        <Row>
+                            <div>
+                                <span style={{color:"white",fontWeight:"bold",letterSpacing:".05em"}}>
+                                {this.state.username+" "}
+                                </span>
+                                <span>
+                                {this.state.desc}
+                                </span>
+                            </div>
+                            
+                        </Row>
+                        <Row style={{color:"#9e9e9e"}}>
+                            {"View "+this.state.comments+" comments"}
+                        </Row>
                     </Col>
                 </Card.Text>
             </Card.Body>
-            <Card.Title>Add a comment...</Card.Title>
+            <Card.Title>
+                <Col>
+                <Form>
+                    <Row>
+                        <Col sm={10}>
+                            <Form.Group controlId="formBasicEmail">
+                                <Form.Control style={{background:"#212121",borderColor:"black",borderWidth:"2px"}} type="text" placeholder="Add a comment..." />
+                            </Form.Group>
+                        </Col>
+                        <Col>
+                            <Button className="postButton" type="submit">
+                                Post
+                            </Button>
+                        </Col>
+                    </Row>
+                </Form>
+                </Col>
+            </Card.Title>
         </Card>
       </div>
     )

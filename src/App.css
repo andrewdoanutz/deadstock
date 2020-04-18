@@ -32,3 +32,12 @@
   margin-bottom: 10%;
   margin-left:28%;
 }
+.postButton{
+  background: transparent !important;
+  border-color: #fdd835 !important;
+  font-weight: bold;
+}
+.postButton:hover{
+  background: #fdd835 !important;
+  color:black !important
+}
