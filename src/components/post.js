@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import {Button,Card} from "react-bootstrap"
+import {Card,Col,Row} from "react-bootstrap"
+import StarRatingComponent from "react-star-rating-component"
+
 
 export default class Post extends Component {
     constructor(props) {
@@ -10,10 +12,14 @@ export default class Post extends Component {
             desc:this.props.desc,
             tags:this.props.tags,
             likes:this.props.likes,
-            comments:this.props.comments
+            comments:this.props.comments,
+            liked:false
         }
     }
-
+    onStarClickCustomIcon(nextValue, prevValue, name) {
+        console.log(this.state.liked)
+        this.setState({liked:!this.state.liked});
+        }
   render() {
     return (
       <div className="post">
@@ -22,11 +28,32 @@ export default class Post extends Component {
             <Card.Img src={this.state.pic} />
             <Card.Body>
                 <Card.Text>
-                    <div>
-                        <Button variant="primary">Like</Button>{this.state.likes+" likes"} 
+                    <Col>
+                    <Row>
+                        <StarRatingComponent
+                            name="app3"
+                            starCount={1}
+                            value={()=>{
+                                if(this.state.liked===true){
+                                    return 1
+                                } else{
+                                    return 0
+                                }
+                            }}
+                            onStarClick={this.onStarClickCustomIcon.bind(this)}
+                            starColor="fdd835"
+                            renderStarIcon={() => {
+                                if(!this.state.liked){
+                                    return <div>🤍</div>
+                                } else {
+                                    return <div>💛</div>
+                                }
+                            }} />
+                            {this.state.likes+" likes"} 
+                        </Row>
                         {this.state.desc}
                         {"View "+this.state.comments+" comments"}
-                    </div>
+                    </Col>
                 </Card.Text>
             </Card.Body>
             <Card.Title>Add a comment...</Card.Title>
