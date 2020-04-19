@@ -60,3 +60,26 @@
   text-decoration: none !important;
 
 }
+
+.accountButton{
+  background: #fdd835 !important;
+  border-color: transparent!important;
+  font-weight: bold;
+  color: black;
+}
+
+.accountButton:hover{
+  background: transparent !important;
+  border-color: #fdd835!important;
+  font-weight: bold;
+  color: white;
+}
+
+.accountSignup{
+  color:#fdd835;
+  text-decoration: underline;
+}
+
+.accountSignup:hover{
+  color:white;
+}
