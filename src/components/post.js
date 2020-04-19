@@ -18,7 +18,10 @@ export default class Post extends Component {
     }
     onStarClickCustomIcon(nextValue, prevValue, name) {
         console.log(this.state.liked)
-        this.setState({liked:!this.state.liked});
+        this.setState({
+            liked:!this.state.liked,
+            likes: this.state.liked ? this.state.likes-1 : this.state.likes+1
+        });
         }
   render() {
     return (
