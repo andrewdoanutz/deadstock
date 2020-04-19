@@ -29,7 +29,7 @@
 }
 .post{
   width: 60%;
-  margin-bottom: 10%;
+  margin-bottom: 8%;
   margin-left:28%;
 }
 .postButton{
@@ -40,4 +40,23 @@
 .postButton:hover{
   background: #fdd835 !important;
   color:black !important
+}
+
+.filterButton{
+  color:white !important;
+  font-size:1.2em;
+  padding:0;
+  text-decoration: none !important;
+}
+
+.filterButton:hover{
+  text-decoration: none !important;
+  color:#fdd835 !important;
+}
+.filterButton:active{
+  text-decoration: none !important;
+}
+.filterButton:visited{
+  text-decoration: none !important;
+
 }

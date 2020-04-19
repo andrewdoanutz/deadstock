@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
-import {Button,Accordion,Col,Row} from "react-bootstrap"
+import {Col,Row} from "react-bootstrap"
 import Post from "../components/post"
+import Filters from "../components/filters"
+
 import fit1 from "../images/fit1.jpg"
 import fit2 from "../images/fit2.jpg"
 import fit3 from "../images/fit3.jpg"
@@ -18,20 +20,31 @@ var info=[
 export default class NewsFeed extends Component {
   
   render() {
+    let tags={}
+    info.map((item)=>{
+      item.tags.map((tag)=>{
+        if(tag in tags){
+          tags[tag]+=1
+        } else {
+          tags[tag]=1
+        }
+      })
+    })
+
     return(
       <div>
-        <Row style={{paddingRight:"0%",paddingLeft:"12%",paddingTop:"5%",paddingBottom:"5%"}}>
+        <Row style={{paddingRight:"5%",paddingLeft:"12%",paddingTop:"5%",paddingBottom:"5%"}}>
           <Col sm={9}>
           {info.map((item)=>{
             return (
               <Row>
-                <Post key={item.username+item.likes+item.comments} username={item.username} pic={item.pic} desc={item.desc} tags={item.tags} likes={item.likes} comments={item.comments} />
+                <Post id={item.username+item.likes+item.comments} username={item.username} pic={item.pic} desc={item.desc} tags={item.tags} likes={item.likes} comments={item.comments} />
               </Row>
             )
           })}
           </Col>
           <Col sm={3}>
-          Filters
+            <Filters style={{borderWidth:"1px",borderColor:"#fdd835"}} tags={tags}/>
           </Col>
         </Row>
       </div>
