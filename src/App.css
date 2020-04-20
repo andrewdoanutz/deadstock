@@ -83,3 +83,22 @@
 .accountSignup:hover{
   color:white;
 }
+
+.calendarBlock{
+  width:100%;
+  padding:1%;
+}
+
+.calendarBlockOverlay {
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+
+  background-color: black;
+  color: white;
+  opacity: 60%;
+  font-weight: bold;
+  font-size: larger;
+  padding:2%;
+  width:30%;
+}

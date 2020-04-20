@@ -15,7 +15,7 @@ export default class NavBar extends Component {
                 <Nav.Link href="/" className="navbarLink">Newsfeed</Nav.Link>
                 <Nav.Link href="/marketplace" className="navbarLink">Marketplace</Nav.Link>
                 <Nav.Link href="/blog" className="navbarLink">Blog</Nav.Link>
-                <Nav.Link href="/calendar" className="navbarLink">Calendar</Nav.Link>
+                <Nav.Link href="/releases" className="navbarLink">Releases</Nav.Link>
                 <Nav.Link href="/account" className="navbarLink">Account</Nav.Link>
             </Nav>
           </Navbar.Collapse>
