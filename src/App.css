@@ -102,3 +102,21 @@
   padding:2%;
   width:30%;
 }
+
+.blogBlockImg{
+  width:100%;
+}
+
+.blogBlockOverlay {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+
+  background-color: black;
+  color: white;
+
+  font-weight: bold;
+  font-size: larger;
+  padding:3%;
+  width:30%;
+}
