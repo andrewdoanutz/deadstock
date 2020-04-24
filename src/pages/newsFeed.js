@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import {Col,Row} from "react-bootstrap"
+import cookie from "react-cookies"
+
 import Post from "../components/post"
 import Filters from "../components/filters"
 
@@ -20,6 +22,9 @@ var info=[
 export default class NewsFeed extends Component {
   
   render() {
+    if(cookie.load('login')===undefined){
+      this.props.history.push("/");
+    }
     let tags={}
     info.map((item)=>{
       item.tags.map((tag)=>{

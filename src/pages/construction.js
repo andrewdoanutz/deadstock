@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 import {Col,Row} from "react-bootstrap"
+import cookie from "react-cookies"
 
 import constr from "../images/construction.png"
 
 export default class Construction extends Component {
   render() {
+    if(cookie.load('login')===undefined){
+      this.props.history.push("/");
+    }
     return (
       <Col>
         <Row>

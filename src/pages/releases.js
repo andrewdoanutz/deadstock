@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Col,Row} from "react-bootstrap"
+import cookie from "react-cookies"
 import CalendarBlock from "../components/calendarBlock"
 
 import cal1 from "../images/calendar1.png"
@@ -16,6 +17,9 @@ import cal9 from "../images/calendar9.png"
 let info=[{pic:cal9,date:"4/24/2020",name:"New Balance x Levi's M1300LV"},{pic:cal1,date:"4/24/2020",name:"Adidas Consortium x Human Made Superstar 80s"},{pic:cal2,date:"4/18/2020",name:"Adidas Yeezy Boost 350 V2 'Linen'"},{pic:cal3,date:"4/18/2020",name:"Air Jordan 6 Retro SE 'DMP'"},{pic:cal4,date:"4/16/2020",name:"Adidas Yeezy Slides"},{pic:cal5,date:"4/11/2020",name:"Air Jordan 1 Retro High OG 'Court Purple'"},{pic:cal6,date:"TBD",name:"Nike Air Zoom Spidron Cage 2"},{pic:cal7,date:"4/11/2020",name:"Air Jordan 1 Retro High OG 'Court Purple'"},{pic:cal8,date:"4/11/2020",name:"New Balance x THIS\nNEVERTHAT ML827KTV"}]
 export default class Releases extends Component {
   render() {
+    if(cookie.load('login')===undefined){
+      this.props.history.push("/");
+    }
     return (
       <Row>
         <Col>

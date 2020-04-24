@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import {Col,Row} from "react-bootstrap"
+import cookie from "react-cookies"
+
 import BlogLayout1 from "../components/blogLayout1"
 import BlogLayout2 from "../components/blogLayout2"
 
@@ -14,6 +16,9 @@ let info=[{pic:blog1,title:"The Story and Food of Matty Matheson"},{pic:blog2,ti
 
 export default class Blog extends Component {
   render() {
+    if(cookie.load('login')===undefined){
+      this.props.history.push("/");
+    }
     return (
       <Col style={{margin:"1%",textAlign:"center"}}>
         <Row style={{textAlign:"center"}}>

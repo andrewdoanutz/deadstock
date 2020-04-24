@@ -16,7 +16,9 @@ export default class CalendarBlock extends Component {
         <div>
             <Row>
                 <Col>
-                    <img className="calendarBlock" src={this.state.pic}/>
+                    <a href="/underConstruction">
+                        <img className="calendarBlock" src={this.state.pic}/>
+                    </a>
                     <div className="calendarBlockOverlay">{this.state.date+": "+this.state.name}</div>
                 </Col>
             </Row>

@@ -77,7 +77,7 @@ export default class Post extends Component {
                     <Row>
                         <Col sm={10}>
                             <Form.Group controlId="formBasicEmail">
-                                <Form.Control style={{background:"#212121",borderColor:"black",borderWidth:"2px"}} type="text" placeholder="Add a comment..." />
+                                <Form.Control style={{background:"#212121",borderColor:"black",borderWidth:"2px",color:"white"}} type="text" placeholder="Add a comment..." />
                             </Form.Group>
                         </Col>
                         <Col>

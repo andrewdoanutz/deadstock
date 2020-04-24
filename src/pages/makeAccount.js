@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import {Card,Button,Form,Col,Row} from "react-bootstrap"
+import cookie from "react-cookies"
 
 export default class MakeAccount extends Component {
   render() {
+    if(cookie.load('login')===undefined){
+      this.props.history.push("/");
+    }
     return (
       <>
         <Row>

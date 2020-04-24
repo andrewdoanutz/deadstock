@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Col,Row,Form,Button} from "react-bootstrap"
+import cookie from "react-cookies"
 
 import ProductLayout from "../components/productLayout"
 
@@ -24,6 +25,9 @@ let info=[{pic:mp1, title: "Jordan 6 Retro DMP 2020"},{pic:mp2, title: "Adidas Y
 
 export default class Marketplace extends Component {
   render() {
+    if(cookie.load('login')===undefined){
+      this.props.history.push("/");
+    }
     return (
       <div style={{paddingTop:"2%"}}>
         <Col>
@@ -31,7 +35,7 @@ export default class Marketplace extends Component {
               <Col></Col>
               <Col sm={6}>
                   <Form.Group controlId="formBasicText">
-                      <Form.Control style={{background:"#212121",borderColor:"#fdd835",borderWidth:"1px"}} type="text" placeholder="Search for people or products..." />
+                      <Form.Control style={{background:"#212121",borderColor:"#fdd835",borderWidth:"1px",color:"white"}} type="text" placeholder="Search for people or products..." />
                   </Form.Group>
               </Col>
               <Col>

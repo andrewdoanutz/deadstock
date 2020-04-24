@@ -7,12 +7,12 @@ export default class NavBar extends Component {
       <>
         <div>
         <Navbar variant="dark" expand="xl" fixed="top" className="navbar">
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/newsfeed">
             <Navbar.Text className="navbarTitle">Deadstock</Navbar.Text>
           </Navbar.Brand>
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav>
-                <Nav.Link href="/" className="navbarLink">Newsfeed</Nav.Link>
+                <Nav.Link href="/newsfeed" className="navbarLink">Newsfeed</Nav.Link>
                 <Nav.Link href="/marketplace" className="navbarLink">Marketplace</Nav.Link>
                 <Nav.Link href="/blog" className="navbarLink">Blog</Nav.Link>
                 <Nav.Link href="/releases" className="navbarLink">Releases</Nav.Link>

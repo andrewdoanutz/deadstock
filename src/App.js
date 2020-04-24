@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route} from "react-router-dom";
+
 import './App.css';
 import NewsFeed from "./pages/newsFeed"
 import Marketplace from "./pages/marketplace"
@@ -9,6 +10,7 @@ import Blog from "./pages/blog"
 import Releases from "./pages/releases"
 import NavBar from "./components/navbar"
 import Construction from "./pages/construction"
+import Login from "./pages/login"
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
         <div>
           <NavBar/>
           <div className="page">
-            <Route exact path="/" component={NewsFeed} />
+            <Route exact path="/" component={Login} />
+            <Route exact path="/newsfeed" component={NewsFeed} />
             <Route exact path="/marketplace" component={Marketplace} />
             <Route exact path="/account" component={Account} />
             <Route exact path="/createAccount" component={MakeAccount} />
