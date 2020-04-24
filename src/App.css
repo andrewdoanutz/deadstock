@@ -92,15 +92,14 @@
 
 .calendarBlockOverlay {
   position: absolute;
-  bottom: 15%;
-  right: 10%;
+  bottom: 2%;
+  left: 2%;
   z-index: 1;
 
   background-color: black;
   color: white;
-  opacity: 60%;
   font-weight: bold;
-  font-size: larger;
+  font-size: large;
   padding:2%;
   width:30%;
 }

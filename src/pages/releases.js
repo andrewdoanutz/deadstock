@@ -21,6 +21,7 @@ export default class Releases extends Component {
       this.props.history.push("/");
     }
     return (
+      <div style={{margin:"2%"}}>
       <Row>
         <Col>
           <Row>
@@ -56,6 +57,7 @@ export default class Releases extends Component {
           </Row>
         </Col>
       </Row>
+      </div>
     )
   }
 }
