@@ -7,7 +7,7 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .06em;
-  font-size: x-large;
+  font-size: xx-large;
   color: white !important;
 }
 .navbarTitle:hover{
@@ -119,4 +119,36 @@
   font-size: larger;
   padding:3%;
   width:30%;
+}
+
+.marketSearchButton{
+  background: transparent !important;
+  border-color: #fdd835 !important;
+  font-weight: bold;
+  text-align: left;
+}
+
+.marketSearchButton:hover{
+  background: #fdd835 !important;
+  color:black !important;
+}
+
+.productBlockImg{
+  width:100% !important;
+}
+
+.productBlockTitle{
+  margin-top: 4%;
+  color:white;
+  text-align: center;
+  font-size:large;
+}
+
+.productLayoutLink{
+  color:#fdd835;
+  font-size:large
+}
+
+.productLayoutLink:hover{
+  color:white;
 }
