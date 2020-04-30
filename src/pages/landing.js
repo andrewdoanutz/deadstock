@@ -63,7 +63,7 @@ export default class LandingPage extends Component {
                             <div>
                                 <Card style={{backgroundColor:"#212121",textAlign:"left",marginTop:"2%",color:"white"}}>
                                     <Card.Title style={{margin:"2%",color:"#fdd835",fontWeight:"bold",letterSpacing:".05em"}}>
-                                        Kenneth
+                                        Kenneth Zhang
                                     </Card.Title>
                                     <Card.Body>
                                     A 4th year Economics and Technology Management student at UCSB, Kenneth has spent the last five years learning the ins and outs of the fashion industry at various companies such as Air Jordan and Sneakerhead while also building his own e-commerce clothing business from scratch. An avid sneaker and apparel collector, Kenneth has pushed to solve problems that the industry constantly faces and the idea for Deadstock was born due to the growing number of counterfeit items and the problem it poses for luxury brands and consumers. In his free time, Kenneth loves to play and watch sports (especially basketball), discover and mix new music, as well as traveling to new countries. 
@@ -71,7 +71,7 @@ export default class LandingPage extends Component {
                                 </Card>
                                 <Card style={{backgroundColor:"#212121",textAlign:"left",marginTop:"2%",color:"white"}}>
                                     <Card.Title style={{margin:"2%",color:"#fdd835",fontWeight:"bold",letterSpacing:".05em"}}>
-                                        Vista
+                                        Vista Darbian
                                     </Card.Title>
                                     <Card.Body>
                                     Vista is a 4th year Financial Mathematics & Statistics major at the University of California, Santa Barbara. Her interest for sneaker and streetwear culture developed when she interned at Adidas as a Demand Planner on the Advanced Analytics team. There, she grew passionate about the mostly uncharted cross section of technology and fashion, which lead her to getting involved with Deadstock. In her free time, she enjoys listening to podcasts, rock climbing, and drinking LaCroix.
