@@ -199,3 +199,17 @@
   text-align: left;
   margin-right: 5%;
 }
+
+.credit{
+  color: white !important;
+  width:100%;
+  text-align: center;
+  margin: 5%;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.credit:hover{
+  color: #fdd835 !important;
+  text-decoration: none;
+}

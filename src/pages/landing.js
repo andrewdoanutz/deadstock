@@ -112,6 +112,11 @@ export default class LandingPage extends Component {
                     </Card.Body>
                 </Card>
             </Row>
+            <Row>
+                <a className="credit" href="https://www.linkedin.com/in/andrewadoan/">
+                    <div>Website by Andrew Doan</div>
+                </a>
+            </Row>
         </Col>
       </div>
     )
