@@ -183,7 +183,7 @@
   top: 20%;
   left: 55%;
   background-color: black;
-  opacity: 90%;
+  opacity: 90% !important;
   color: white;
 
   font-weight: bold;
