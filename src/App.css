@@ -182,8 +182,8 @@
   position: absolute;
   top: 20%;
   left: 55%;
-  background-color: black;
-  color: rgba(255,255,255,.9);
+  background-color: rgba(0,0,0,.9);
+  color: white;
 
   font-weight: bold;
   font-size: 3em;
