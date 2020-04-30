@@ -11,6 +11,8 @@ import Releases from "./pages/releases"
 import NavBar from "./components/navbar"
 import Construction from "./pages/construction"
 import Login from "./pages/login"
+import LandingPage from "./pages/landing"
+import Technology from "./pages/technology"
 
 function App() {
   return (
@@ -27,7 +29,9 @@ function App() {
             <Route exact path="/blog" component={Blog} />
             <Route exact path="/releases" component={Releases} />
             <Route exact path="/underConstruction" component={Construction} />
+            <Route exact path="/technology" component={Technology} />
           </div>
+          <Route exact path="/aboutUs" component={LandingPage} />
         </div>
       </BrowserRouter>
     </div>

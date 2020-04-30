@@ -17,6 +17,8 @@ export default class NavBar extends Component {
                 <Nav.Link href="/blog" className="navbarLink">Blog</Nav.Link>
                 <Nav.Link href="/releases" className="navbarLink">Releases</Nav.Link>
                 <Nav.Link href="/account" className="navbarLink">Account</Nav.Link>
+                <Nav.Link href="/aboutUs" className="navbarLink">About Us</Nav.Link>
+                <Nav.Link href="/technology" className="navbarLink">Technology</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
