@@ -21,7 +21,7 @@ export default class Login extends Component {
               path: '/',
             }
           )
-        this.props.history.push("/newsfeed");
+        this.props.history.push("/aboutUs");
     }
   render() {
     return (
