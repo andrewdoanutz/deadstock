@@ -35,8 +35,11 @@ export default class Technology extends Component {
                     </div>
                 </Card>
             </Row>
-            <Row>
-                <div className="techFiller">You work hard to buy your products. We work hard to protect them.</div>
+            <Row style={{marginBottom:"20%"}}>
+                <Col></Col>
+                <Col sm={5}>
+                    <div className="techFiller">You work hard to buy your products. We work hard to protect them.</div>
+                </Col>
             </Row>
             <Row>
                 <Card style={{backgroundColor:"black",width:"100%"}}>
@@ -49,6 +52,12 @@ export default class Technology extends Component {
                     </div>
                 </Card>
             </Row>
+            <Row style={{marginBottom:"20%",marginTop:"10%"}}>
+                <Col></Col>
+                <Col sm={5}>
+                    <div className="techFiller">Why wait weeks for your products to arrive?</div>
+                </Col>
+            </Row>
             <Row>
                 <Card style={{backgroundColor:"black",width:"100%"}}>
                     <img class= 'img-responsive' style={{width:"100%",height:"90%"}} src={tech3}/>
@@ -59,6 +68,12 @@ export default class Technology extends Component {
                         </div>
                     </div>
                 </Card>
+            </Row>
+            <Row style={{marginBottom:"20%",marginTop:"10%"}}>
+                <Col></Col>
+                <Col sm={5}>
+                    <div className="techFiller">If your car comes with carfax, why not your favorite goods too? </div>
+                </Col>
             </Row>
             <Row>
                 <Card style={{backgroundColor:"black",width:"100%"}}>
@@ -71,16 +86,28 @@ export default class Technology extends Component {
                     </div>
                 </Card>
             </Row>
+            <Row style={{marginBottom:"20%",marginTop:"10%"}}>
+                <Col></Col>
+                <Col sm={5}>
+                    <div className="techFiller">Did you know that becoming an influencer is the number one career choice in today’s society?</div>
+                </Col>
+            </Row>
             <Row>
                 <Card style={{backgroundColor:"black",width:"100%"}}>
                     <img class= 'img-responsive' style={{width:"100%",height:"80%"}} src={tech4}/>
                     <div className="techOverlay">
                         Build relationships with your friends, and your favorite brands
                         <div style={{fontWeight:"normal",fontSize:".5em"}}>
-                        Did you know that becoming an influencer is the number one career choice in today’s society? Deadstock gives influencers the perfect platform to promote items from their favorite brands while gaining recognition from these brands. 
+                        Deadstock gives influencers the perfect platform to promote items from their favorite brands while gaining recognition from these brands. 
                         </div>
                     </div>
                 </Card>
+            </Row>
+            <Row style={{marginBottom:"20%",marginTop:"10%"}}>
+                <Col></Col>
+                <Col sm={5}>
+                    <div className="techFiller">With COVID-19 causing unprecedented ripples in the economy, luxury brands must work harder than ever to regain the trust of their consumers. Luckily, Deadstock has their back. </div>
+                </Col>
             </Row>
             <Row>
                 <Card style={{backgroundColor:"black",width:"100%"}}>
@@ -93,7 +120,12 @@ export default class Technology extends Component {
                     </div>
                 </Card>
             </Row>
-            
+            <Row style={{marginBottom:"20%",marginTop:"10%"}}>
+                <Col></Col>
+                <Col sm={5}>
+                    <div className="techFiller">Deadstock is the new standard of protection that luxury consumers expect from their favorite brands. </div>
+                </Col>
+            </Row>
         </Col>
       </div>
     )
