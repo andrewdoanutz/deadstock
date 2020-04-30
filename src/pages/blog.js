@@ -4,7 +4,7 @@ import cookie from "react-cookies"
 
 import BlogLayout1 from "../components/blogLayout1"
 import BlogLayout2 from "../components/blogLayout2"
-
+import NavBar from "../components/navbar"
 import blog1 from "../images/blog1.jpg"
 import blog2 from "../images/blog2.jpg"
 import blog3 from "../images/blog3.jpg"
@@ -20,6 +20,8 @@ export default class Blog extends Component {
       this.props.history.push("/");
     }
     return (
+      <>
+      <NavBar/>
       <Col style={{margin:"1%",textAlign:"center"}}>
         <Row style={{textAlign:"center"}}>
           <BlogLayout1 info1={info[0]}/>
@@ -28,6 +30,7 @@ export default class Blog extends Component {
           <BlogLayout2 info1={info[3]} info2={info[4]} info3={info[5]} info4={info[1]} info5={info[2]}  />
         </Row>
       </Col>
+      </>
     )
   }
 }

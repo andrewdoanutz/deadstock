@@ -177,3 +177,17 @@
   font-size: 1em;
   width:30%;
 }
+
+.techOverlay {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  background-color: black;
+  opacity: 90%;
+  color: white;
+
+  font-weight: bold;
+  font-size: 3em;
+  width:40%;
+  padding:2%;
+}

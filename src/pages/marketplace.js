@@ -3,6 +3,7 @@ import {Col,Row,Form,Button} from "react-bootstrap"
 import cookie from "react-cookies"
 
 import ProductLayout from "../components/productLayout"
+import NavBar from "../components/navbar"
 
 import mp1 from "../images/mp1.jpg"
 import mp2 from "../images/mp2.jpeg"
@@ -29,6 +30,8 @@ export default class Marketplace extends Component {
       this.props.history.push("/");
     }
     return (
+      <>
+      <NavBar/>
       <div style={{paddingTop:"2%"}}>
         <Col>
           <Row>
@@ -61,6 +64,7 @@ export default class Marketplace extends Component {
           </Row>
         </Col>
       </div>
+      </>
     )
   }
 }

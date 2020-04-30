@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Col,Row} from "react-bootstrap"
 import cookie from "react-cookies"
+import NavBar from "../components/navbar"
 
 import constr from "../images/construction.png"
 
@@ -10,6 +11,8 @@ export default class Construction extends Component {
       this.props.history.push("/");
     }
     return (
+      <>
+      <NavBar/>
       <Col>
         <Row>
             <Col>
@@ -24,6 +27,7 @@ export default class Construction extends Component {
             <Col></Col>
         </Row>
       </Col>
+      </>
     )
   }
 }

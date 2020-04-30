@@ -4,7 +4,7 @@ import cookie from "react-cookies"
 
 import Post from "../components/post"
 import Filters from "../components/filters"
-
+import NavBar from "../components/navbar"
 import fit1 from "../images/fit1.jpg"
 import fit2 from "../images/fit2.jpg"
 import fit3 from "../images/fit3.jpg"
@@ -38,6 +38,7 @@ export default class NewsFeed extends Component {
 
     return(
       <div>
+        <NavBar/>
         <Row style={{paddingRight:"5%",paddingLeft:"12%",paddingTop:"5%",paddingBottom:"5%"}}>
           <Col sm={9}>
           {info.map((item)=>{

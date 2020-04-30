@@ -11,7 +11,7 @@ export default class Login extends Component {
         this.input=React.createRef()
     }
     giveCookie(){
-        if(this.input.current.value!=="kz"){
+        if(this.input.current.value!=="nvc2020"){
             return
         }
         cookie.save(
@@ -25,8 +25,13 @@ export default class Login extends Component {
     }
   render() {
     return (
-        <div style={{paddingTop:"16%"}}>
+        <div style={{paddingTop:"11%",textAlign:"center"}}>
             <Col>
+                <Row>
+                    <Col>
+                    <div style={{marginBottom:"3%",fontSize:"4em",fontWeight:"bold",textTransform:"uppercase",letterSpacing:".06em",color:"white"}}>Deadstock</div>
+                    </Col>
+                </Row>
                 <Row>
                     <Col></Col>
                     <Col>

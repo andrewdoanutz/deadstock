@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Card,Button,Form,Col,Row} from "react-bootstrap"
 import cookie from "react-cookies"
-
+import NavBar from "../components/navbar"
 export default class Account extends Component {
   render() {
     if(cookie.load('login')===undefined){
@@ -9,6 +9,7 @@ export default class Account extends Component {
     }
     return (
       <>
+      <NavBar/>
         <Row>
           <Col></Col>
           <Col sm={6} style={{marginTop:"5%"}}>

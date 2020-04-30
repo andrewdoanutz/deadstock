@@ -8,11 +8,11 @@ import {
   Accordion,
   useAccordionToggle
 } from "react-bootstrap";
-
+import cookie from "react-cookies"
 import React, { Component } from 'react'
+import NavBar from "../components/navbar"
 
 import land1 from "../images/landing1.jpg"
-import land2 from "../images/landing2.png"
 import land3 from "../images/landing3.png"
 
 function CustomToggle({ children, eventKey }) {
@@ -32,8 +32,12 @@ function CustomToggle({ children, eventKey }) {
 
 export default class LandingPage extends Component {
   render() {
+    if(cookie.load('login')===undefined){
+        this.props.history.push("/");
+      }
     return (
       <div>
+          <NavBar/>
         <Col>
             <Row>
                 <Card style={{backgroundColor:"black"}}>
@@ -50,8 +54,7 @@ export default class LandingPage extends Component {
             </Row>
             <Row>
                 <Card style={{backgroundColor:"black",color:"white",textAlign:"center"}}>
-                    <Card.Title style={{fontSize:"3em",fontWeight:"bold",marginTop:"10%",marginBottom:"10%"}}>The Team</Card.Title>
-                    <img class= 'img-responsive' style={{width:"100%",height:"60%"}} src={land3}/>
+                    <img class= 'img-responsive' style={{width:"100%",height:"90%"}} src={land3}/>
                 </Card>
                 <Col>
                     <Accordion style={{textAlign:"center"}}>

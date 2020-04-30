@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {Col,Row} from "react-bootstrap"
 import cookie from "react-cookies"
 import CalendarBlock from "../components/calendarBlock"
-
+import NavBar from "../components/navbar"
 import cal1 from "../images/calendar1.png"
 import cal2 from "../images/calendar2.png"
 import cal3 from "../images/calendar3.png"
@@ -21,6 +21,8 @@ export default class Releases extends Component {
       this.props.history.push("/");
     }
     return (
+      <>
+      <NavBar/>
       <div style={{margin:"2%"}}>
       <Row>
         <Col>
@@ -58,6 +60,7 @@ export default class Releases extends Component {
         </Col>
       </Row>
       </div>
+      </>
     )
   }
 }
