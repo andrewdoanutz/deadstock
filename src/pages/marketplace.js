@@ -32,7 +32,7 @@ export default class Marketplace extends Component {
     return (
       <>
       <NavBar/>
-      <div style={{paddingTop:"2%"}}>
+      <div style={{paddingTop:"2%",width:"100%"}}>
         <Col>
           <Row>
               <Col></Col>

@@ -13,7 +13,7 @@ export default class ProductLayout extends Component {
     }
   render() {
     return (
-      <Card style={{backgroundColor:"#212121", margin:"2%"}}>
+      <Card style={{backgroundColor:"#212121", margin:"2%",width:"100%"}}>
         <Card.Title style={{margin:"2%",color:"white",fontWeight:"bold",letterSpacing:".05em"}}>
             <Row>
                 <Col>
