@@ -71,7 +71,7 @@ export default class LandingPage extends Component {
                                 </Card>
                                 <Card style={{backgroundColor:"#212121",textAlign:"left",marginTop:"2%",color:"white"}}>
                                     <Card.Title style={{margin:"2%",color:"#fdd835",fontWeight:"bold",letterSpacing:".05em"}}>
-                                        Vista Darbian
+                                        Vista Darabian
                                     </Card.Title>
                                     <Card.Body>
                                     Vista is a 4th year Financial Mathematics & Statistics major at the University of California, Santa Barbara. Her interest for sneaker and streetwear culture developed when she interned at Adidas as a Demand Planner on the Advanced Analytics team. There, she grew passionate about the mostly uncharted cross section of technology and fashion, which lead her to getting involved with Deadstock. In her free time, she enjoys listening to podcasts, rock climbing, and drinking LaCroix.
