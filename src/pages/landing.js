@@ -99,7 +99,7 @@ export default class LandingPage extends Component {
                 </Col>
             </Row>
             <Row>
-                <Card style={{backgroundColor:"black",color:"white",textAlign:"center",width:"100%",paddingTop:"25%",paddingBottom:"25%"}}>
+                <Card style={{backgroundColor:"black",color:"white",textAlign:"center",width:"100%",paddingTop:"15%",paddingBottom:"25%"}}>
                     <Card.Body>
                         <Row>
                             <Col>
