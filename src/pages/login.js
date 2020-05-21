@@ -24,34 +24,36 @@ export default class Login extends Component {
         this.props.history.push("/aboutUs");
     }
   render() {
-    return (
-        <div style={{paddingTop:"11%",textAlign:"center"}}>
-            <Col>
-                <Row>
-                    <Col>
-                    <div style={{marginBottom:"3%",fontSize:"4em",fontWeight:"bold",textTransform:"uppercase",letterSpacing:".06em",color:"white"}}>Deadstock</div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col></Col>
-                    <Col>
-                        <Form.Group controlId="formBasicText">
-                            <Form.Control ref={this.input} style={{background:"#212121",borderColor:"#fdd835",borderWidth:"1px",color:"white"}} type="text" placeholder="" />
-                        </Form.Group>
-                    </Col>
-                    <Col></Col>
-                </Row>
-                <Row>
-                    <Col></Col>
-                    <Col>
-                        <div style={{textAlign:"center",paddingTop:"10%"}}>
-                            <Button className="postButton" onClick={this.giveCookie.bind(this)}>See the Future</Button>
-                        </div>
-                    </Col>
-                    <Col></Col>
-                </Row>
-            </Col>
-        </div>
-    )
+ 
+    return (null)
+    // return (
+    //     <div style={{paddingTop:"11%",textAlign:"center"}}>
+    //         <Col>
+    //             <Row>
+    //                 <Col>
+    //                 <div style={{marginBottom:"3%",fontSize:"4em",fontWeight:"bold",textTransform:"uppercase",letterSpacing:".06em",color:"white"}}>Deadstock</div>
+    //                 </Col>
+    //             </Row>
+    //             <Row>
+    //                 <Col></Col>
+    //                 <Col>
+    //                     <Form.Group controlId="formBasicText">
+    //                         <Form.Control ref={this.input} style={{background:"#212121",borderColor:"#fdd835",borderWidth:"1px",color:"white"}} type="text" placeholder="" />
+    //                     </Form.Group>
+    //                 </Col>
+    //                 <Col></Col>
+    //             </Row>
+    //             <Row>
+    //                 <Col></Col>
+    //                 <Col>
+    //                     <div style={{textAlign:"center",paddingTop:"10%"}}>
+    //                         <Button className="postButton" onClick={this.giveCookie.bind(this)}>See the Future</Button>
+    //                     </div>
+    //                 </Col>
+    //                 <Col></Col>
+    //             </Row>
+    //         </Col>
+    //     </div>
+    // )
   }
 }

@@ -13,14 +13,22 @@ import Login from "./pages/login"
 import LandingPage from "./pages/landing"
 import Technology from "./pages/technology"
 import Mobile from "./pages/mobile"
+import cookie from "react-cookies"
 
 function App() {
+  cookie.save(
+    'login',
+    true,
+    {
+      path: '/',
+    }
+  )
   return (
     <div>
       <BrowserRouter>
         <div>
           <div className="page">
-            <Route exact path="/" component={Login} />
+            {/* <Route exact path="/" component={Login} /> */}
             <Route exact path="/newsfeed" component={NewsFeed} />
             <Route exact path="/marketplace" component={Marketplace} />
             <Route exact path="/account" component={Account} />
@@ -30,7 +38,7 @@ function App() {
             <Route exact path="/underConstruction" component={Construction} />
             
           </div>
-          <Route exact path="/aboutUs" component={LandingPage} />
+          <Route exact path="/" component={LandingPage} />
           <Route exact path="/technology" component={Technology} />
           <Route exact path="/app" component={Mobile} />
         </div>
