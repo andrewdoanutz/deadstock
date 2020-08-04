@@ -52,7 +52,7 @@ export default class LandingPage extends Component {
                     </Card.Body>
                 </Card>
             </Row>
-            <Row>
+            {/* <Row>
                 <Card style={{backgroundColor:"black",color:"white",textAlign:"center"}}>
                     <img class= 'img-responsive' style={{width:"100%",height:"90%"}} src={land3}/>
                 </Card>
@@ -97,7 +97,7 @@ export default class LandingPage extends Component {
                         </Accordion.Collapse>
                     </Accordion>
                 </Col>
-            </Row>
+            </Row> */}
             <Row>
                 <Card style={{backgroundColor:"black",color:"white",textAlign:"center",width:"100%",paddingTop:"10%",paddingBottom:"25%"}}>
                     <Card.Body>
